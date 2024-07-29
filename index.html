@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ping Pong Game</title>
+    
+</head>
+<body>
+    <div id="nameInput">
+        <h1>Enter Player Names</h1>
+        <span>Este jogo não tem versão mobile</span>
+        <input type="text" id="player1" placeholder="Player 1 Name" />
+        <input type="text" id="player2" placeholder="Player 2 Name" />
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="modal">
+        <p id="modalMessage"></p>
+        <button onclick="restartGame()">Play Again</button>
+        <button class="cancel" onclick="goToStart()">Back to Start</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
